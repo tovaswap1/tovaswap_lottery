@@ -19,7 +19,7 @@ export default {
   },
   Ticket: {
     Price: {
-      mainnet: 5,
+      mainnet: 1,
       testnet: 1,
     },
     Precision: {

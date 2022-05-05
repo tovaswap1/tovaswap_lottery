@@ -48,7 +48,7 @@ const main = async () => {
 
        // console.log("ticketPrice2 -> ",ticketPrice2);  DESCOMENTAR
 
-        const ticketPrice= "3364" //Esto representa los $5 en TVS actualmente, deberiamos tener algo que lo calcule automaticamente
+        const ticketPrice= "715" //Esto representa los $1 en TVS actualmente, deberiamos tener algo que lo calcule automaticamente
 
         // Create, sign and broadcast transaction.
         const tx = await contract.startLottery(
