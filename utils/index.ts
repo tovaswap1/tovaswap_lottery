@@ -33,13 +33,12 @@ export const getTicketPrice = async (
 };
 
 
-export const getTicketPrice2 = async (  
-): Promise<string> => {
-  let value= "";
-  await axios.post('https://api-swaptova.herokuapp.com/api/transaction/getCustody')
-  .then(function(response: { data: any; }){
-    value =  response.data;
-    //console.log(response.data);
+export const getTicketTVSPrice = async (  
+): Promise<number> => {
+  let value = 0;
+  await axios.post('https://api-swaptova.herokuapp.com/api/commons/getPriceTVS')
+  .then(function(response: { data: any; }){    
+    value =  response.data.TVS_price;    
   })
    return value;
 };
